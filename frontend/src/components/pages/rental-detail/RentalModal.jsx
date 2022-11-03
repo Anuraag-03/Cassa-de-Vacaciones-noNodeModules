@@ -31,12 +31,12 @@ const RentalModal = ({
           {city}, {street}
         </h3>
         <h4>
-          <em>{nights} </em> Nights /<em> ${price}</em> per Night
+          <em>{nights} </em> Nights /<em> ₹{price}</em> per Night
         </h4>
         <p>Between {getFormmatedDate()}</p>
         <p>With {getNumberOfGuests()} guests</p>
         <h5>
-          Total Price: <span>${totalPrice}</span>
+          Total Price: <span>₹{totalPrice}</span>
         </h5>
       </div>
       <div className='modal__footer'>
