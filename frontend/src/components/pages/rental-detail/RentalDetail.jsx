@@ -44,7 +44,7 @@ const RentalDetail = ({
             length={reviews?.length}
           />
           <RentalDetailGallery
-            coverImage={rental?.image.url}
+            coverImage={rental?.images[1]}
             images={rental?.images}
           />
           <div className='rentalDetail__body'>

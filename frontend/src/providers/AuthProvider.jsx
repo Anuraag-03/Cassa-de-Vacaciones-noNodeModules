@@ -11,6 +11,7 @@ const AuthContext = createContext(null);
 const AuthBaseProvider = ({ children, dispatch }) => {
   const isAuthenticated = () => {
     const decodedToken = decodeToken(getToken());
+    console.log(decodedToken)
     return decodedToken && isTokenValid(decodedToken);
   };
 

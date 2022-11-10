@@ -16,7 +16,7 @@ class AxiosService {
     });
     this.axiosInstace.interceptors.request.use((config) => {
       const token = localStorage.getItem('freshbnb_token');
-      if (token) config.headers.Authorization = `Berear ${token}`;
+      if (token) config.headers.Authorization = `Bearer ${token}`; /* Bearer name changed*/
       return config;
     });
   }

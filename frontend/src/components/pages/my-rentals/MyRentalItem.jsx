@@ -26,7 +26,7 @@ const MyRentalItem = ({ rental, deleteMyRental }) => {
     <>
       <div className='browseItem'>
         <div className='browseItem__head'>
-          <img src={rental.image.url} alt='' />
+          <img src={rental.images[1]} alt='' />
           <div>
             <button onClick={() => onDelete(rental._id)}>Delete</button>
             <button onClick={onOpen} className='accept__btn'>

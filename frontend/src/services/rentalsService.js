@@ -24,6 +24,7 @@ const getById = async (id) => {
 const add = async (rental) => {
   try {
     const res = await freshbnbAxios.post('/rentals', rental);
+    console.log(res)
     return res.data;
   } catch (error) {
     console.log(error);
